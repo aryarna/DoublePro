@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satta Website Multi-Step Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-primary text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Double Pro.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feature.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="results.html">Winner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    
+      <!-- Main Content -->
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-center">Your Lucky PlatForm</h2>
+        </div>
+        <div class="card-body">
+            <div id="progress-bar-container">
+                <ul class="progressbar">
+                    <li class="active" id="step1"><i class="fas fa-user"></i><span> Step 1</span></li>
+                    <li id="step2"><i class="fas fa-envelope"></i><span> Step 2</span></li>
+                    <li id="step3"><i class="fas fa-phone"></i><span> Step 3</span></li>
+                    <li id="step4"><i class="fas fa-calendar"></i><span> Step 4</span></li>
+                    <li id="step5"><i class="fas fa-lock"></i><span> Step 5</span></li>
+                    <li id="step6"><i class="fas fa-check-circle"></i><span> Step 6</span></li>
+                </ul>
+            </div>
+            <form id="multi-step-form" action="/api/submit" method="post">
+                <!-- Step 1 -->
+                <div class="form-step active" id="step-1">
+
+                    <div class="form-group">
+                    <p> <strong> Terms and Condition: </strong></p>
+                       
+                         <p> <input type="checkbox" id="terms" name="terms" required /> <strong>YOU ARE PLAYING THIS GAME ON YOUR CHOICE , FOR YOUR BENIFITE AND ALSO LOSS  <strong> Double Pro.  </strong> WILL NOT BE RESPONSIBLE ...</strong> </p>
+                    </div>    
+
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="user_name">User_Name Of This Platform:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary next-btn">Next</button>
+                </div>
+            
+                <!-- Step 2 -->
+                <div class="form-step" id="step-2">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirmPassword" required>
+                    </div>
+            
+                    <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                    <button type="button" class="btn btn-primary next-btn">Next</button>
+                </div>
+            
+                <!-- Step 3 -->
+                <div class="form-step" id="step-3">
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+
+            
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+            
+                    <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                    <button type="button" class="btn btn-primary next-btn">Next</button>
+                </div>
+            
+                <!-- Step 4 -->
+                <div class="form-step" id="step-4">
+
+
+
+                    
+                    <div class="form-group">
+                        <h4> <center> Invest Your Money</center></h4>
+                        <br>
+                        <label for="moneyspend">Choose your Investing Money(In XXXRS):</label>
+                       <select name="moneyspend" id="moneyspend" class="form-control" required>
+                        <option>20 RS</option>
+                        <option>100 RS</option>
+                        <option>500 RS</option>
+                       </select>
+                    </div>
+
+                    <br>
+                    <h4> <center> Make Sure You Will Be Choose ONLY ONE OPTION 1 OR 2</center></h4>
+                    <br>
+                    <p> <strong> You Will Be Win 4x In It </strong> </p>
+                    <div class="form-group">
+                        <label for="L1">1.) Choose Your Winning Number:</label>
+                        <select name="L1" id="L1" class="form-control" required>
+                            <option>Choose Your Winning Number:</option>
+                            <option>1200120</option>
+                            <option>1200130</option>
+                            <option>1200150</option>
+                            <option>1200190</option>
+                        </select>
+                    </div>
+                    <center> <p> OR </p> </center>
+                    <p> <strong> You Will Be Win 2x In It </strong> </p>
+                    <div class="form-group">
+                        <label for="L2">2.) Choose Your Benefit Number:</label>
+                        <select name="L2" id="L2" class="form-control" required>
+                            <option>Choose Your Benefit Number:</option>
+                            <option>1500018</option>
+                            <option>1500040</option>
+                        </select>
+                    </div>
+            
+                    <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                    <button type="button" class="btn btn-primary next-btn">Next</button>
+                </div>
+            
+                <!-- Step 5 -->
+                <div class="form-step" id="step-5">
+                    <div class="form-group">
+                        <label for="x">SCAN THIS QR CODE AND PAY:</label>
+                        <center> <img src="/mast.jpg" height="250" width="250"> </center>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="upi">Please Enter Your UPI TRANSACTION ID:</label>
+                        <input type="number" class="form-control" id="upi" name="upi" required>
+                    </div>
+            
+                    <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                    <button type="button" class="btn btn-primary next-btn">Next</button>
+                </div>
+            
+                <!-- Step 6 -->
+                <div class="form-step" id="step-6">
+                    <div class="form-group">
+                        <label for="yupi">Please Share Your Own UPI ID:</label>
+                        <input type="text" class="form-control" id="yupi" name="yupi" required>
+                    </div>
+                    <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Satta Website. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
