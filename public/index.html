@@ -89,12 +89,12 @@
             
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <input type="password" class="form-control" id="password" name="password" minlength="6" maxlength="8" placeholder="min-- 6 and max-- 8 (mandatory)" required>
                     </div>
             
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" class="form-control" id="confirm-password" name="confirmPassword" required>
+                        <input type="password" class="form-control" id="confirm-password" name="confirmPassword" minlength="6" maxlength="8" placeholder="min-- 6 and max-- 8 (mandatory)" required>
                     </div>
             
                     <button type="button" class="btn btn-secondary prev-btn">Previous</button>
@@ -105,7 +105,7 @@
                 <div class="form-step" id="step-3">
                     <div class="form-group">
                         <label for="phone">Phone:</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <input type="tel" class="form-control" id="phone" name="phone" maxlength="10" required>
                     </div>
 
             
@@ -173,7 +173,7 @@
             
                     <div class="form-group">
                         <label for="upi">Please Enter Your UPI TRANSACTION ID:</label>
-                        <input type="number" class="form-control" id="upi" name="upi" required>
+                        <input type="number" class="form-control" id="upi" name="upi" maxlength="13" required>
                     </div>
             
                     <button type="button" class="btn btn-secondary prev-btn">Previous</button>
