@@ -85,3 +85,40 @@ body {
 .footer {
     padding: 20px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* public/stylesheets/style.css */
+
+
+.footer-links {
+    list-style-type: none;
+
+}
+
+.footer-links li {
+   
+    margin-right: 10px;
+}
+
+.footer-links li:first-child {
+    margin-left: 0; /* Remove margin for the first child */
+}
+
+.footer-links li a {
+    
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: none;
+}
