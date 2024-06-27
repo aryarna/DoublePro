@@ -1,5 +1,6 @@
 // user.js
 
+const { text } = require('body-parser');
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -13,7 +14,8 @@ const userSchema = new mongoose.Schema({
     yupi: { type: String, required: true },
     L1: { type: String, required: true },
     L2: { type: String, required: true },
-    moneyspend: { type: String, required: true }
+    moneyspend: { type: String, required: true },
+    ref:{ type:String, required:false}
 });
 
 const User = mongoose.model('Gin', userSchema);

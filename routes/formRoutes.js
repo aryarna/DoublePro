@@ -8,7 +8,7 @@ const router = express.Router();
 // Route for handling form submission
 router.post('/submit', async (req, res) => {
     // Extract data from request body
-    const { name, username, email, phone, dob, password, confirmPassword, upi, yupi, L1, L2, moneyspend } = req.body;
+    const { name, username, email, phone, dob, password, confirmPassword, upi, yupi, L1, L2, moneyspend,ref } = req.body;
 
     // Check if passwords match
     if (password !== confirmPassword) {
@@ -17,7 +17,7 @@ router.post('/submit', async (req, res) => {
 
     try {
         // Create a new user instance
-        const newUser = new User({ name, username, email, phone, dob, password, upi, yupi, L1, L2, moneyspend });
+        const newUser = new User({ name, username, email, phone, dob, password, upi, yupi, L1, L2, moneyspend,ref });
 
         // Save the new user to the database
         await newUser.save();
